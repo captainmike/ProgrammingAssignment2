@@ -1,8 +1,15 @@
 ## Put comments here that give an overall description of what your
 ## functions do
+# 'makeCacheMatrix' and 'cacheSolve' functions work in tenden to calculate
+# inverse of matrix, and to cache the result of calculation so that if the same
+# matrix is provided, it returns the value from the cache without calculating it again.
+# 'makeCacheMatrix' produces a data structure that holds the matrix,
+# and its computed matrix inverse in a list of functions, while 'cacheSolve'
+# calculates the inverse matrix from this special data structure and caches
+# the result once finishes calculation.
 
 ## Write a short comment describing this function
-# `makeCacheMatrix` stores a "matrix" and its inverse counterpart;
+# 'makeCacheMatrix' stores a "matrix" and its inverse counterpart;
 # It is implemented using a list which contatins a function to
 # 1.  set the value of the matrix
 # 2.  get the value of the matrix
@@ -23,7 +30,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
-# `cacheSolve` calculates and stores the result of special
+# 'cacheSolve' calculates and stores the result of special
 # matrix created by 'makeCacheMatrix'. It caches the matrix inverse
 # in this special matrix so it does not calculate it again
 # unless the matrix is updated.
