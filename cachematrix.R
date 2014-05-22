@@ -2,6 +2,12 @@
 ## functions do
 
 ## Write a short comment describing this function
+# `makeCacheMatrix` stores a "matrix" and its inverted counterpart;
+# It is implemented using a list which contatins a function to
+# 1.  set the value of the matrix
+# 2.  get the value of the matrix
+# 3.  set the value of the inverted matrix
+# 4.  get the value of the inverted matrix
 
 makeCacheMatrix <- function(x = matrix()) {
   inverted <- NULL
